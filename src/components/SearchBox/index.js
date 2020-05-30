@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import { Link } from "gatsby";
-import { Index } from "elasticlunr";
+import React, { Component } from 'react';
+import { Link } from 'gatsby';
+import { Index } from 'elasticlunr';
 
 export default class SearchBox extends Component {
   constructor(props) {
@@ -14,7 +14,7 @@ export default class SearchBox extends Component {
 
   render() {
     return (
-      <div className={`navbar-item ${this.state.isActive ? "is-active" : ""}`}>
+      <div className={`navbar-item ${this.state.isActive ? 'is-active' : ''}`}>
         <input
           className="input navbar-link is-rounded is-primary"
           type="text"

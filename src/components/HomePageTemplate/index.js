@@ -1,8 +1,8 @@
-import React from "react";
-import Helmet from "react-helmet";
-import Offerings from "../Offerings";
-import Testimonials from "../Testimonials";
-import PropTypes from "prop-types";
+import React from 'react';
+import Helmet from 'react-helmet';
+import Offerings from '../Offerings';
+import Testimonials from '../Testimonials';
+import PropTypes from 'prop-types';
 
 const HomePageTemplate = ({
   title,
@@ -22,7 +22,7 @@ const HomePageTemplate = ({
     <section className="hero is-dark is-bold is-medium has-background">
       <img
         className="hero-background is-transparent"
-        src={"/img/piano-hands.jpg"}
+        src={'/img/piano-hands.jpg'}
       />
       <div className="hero-body">
         <div className="container">

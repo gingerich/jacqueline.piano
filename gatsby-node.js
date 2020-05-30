@@ -1,7 +1,7 @@
-const _ = require("lodash");
-const path = require("path");
-const { createFilePath } = require("gatsby-source-filesystem");
-const createPaginatedPages = require("gatsby-paginate");
+const _ = require('lodash');
+const path = require('path');
+const { createFilePath } = require('gatsby-source-filesystem');
+const createPaginatedPages = require('gatsby-paginate');
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
@@ -42,7 +42,7 @@ exports.createPages = ({ actions, graphql }) => {
     let posts = [];
     // Iterate through each post/page, putting all found posts (where templateKey = article-page) into `posts`
     postsAndPages.forEach((edge) => {
-      if (_.isMatch(edge.node.frontmatter, { templateKey: "article-page" })) {
+      if (_.isMatch(edge.node.frontmatter, { templateKey: 'article-page' })) {
         posts = posts.concat(edge);
       }
     });
@@ -50,9 +50,9 @@ exports.createPages = ({ actions, graphql }) => {
     createPaginatedPages({
       edges: posts,
       createPage: createPage,
-      pageTemplate: "src/templates/blog.js",
+      pageTemplate: 'src/templates/blog.js',
       pageLength: 6, // This is optional and defaults to 10 if not used
-      pathPrefix: "blog", // This is optional and defaults to an empty string if not used
+      pathPrefix: 'blog', // This is optional and defaults to an empty string if not used
       context: {}, // This is optional and defaults to an empty object if not used
     });
     postsAndPages.forEach((edge) => {

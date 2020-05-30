@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import Helmet from "react-helmet";
-import "../../assets/sass/styles.sass";
-import config from "../../../config";
-import NavBar from "../NavBar";
-import Footer from "../Footer";
+import React, { Component } from 'react';
+import Helmet from 'react-helmet';
+import '../../assets/sass/styles.sass';
+import config from '../../../config';
+import NavBar from '../NavBar';
+import Footer from '../Footer';
 
 class Layout extends Component {
   constructor(props) {

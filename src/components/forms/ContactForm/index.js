@@ -1,30 +1,30 @@
-import React from "react";
-import { Formik, Field } from "formik";
-import { navigate } from "gatsby-link";
-import validationSchema from "./validationSchema";
+import React from 'react';
+import { Formik, Field } from 'formik';
+import { navigate } from 'gatsby-link';
+import validationSchema from './validationSchema';
 
 const encode = (data) => {
   return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
 };
 
 const ContactForm = () => {
   return (
     <Formik
-      initialValues={{ name: "", email: "", message: "" }}
+      initialValues={{ name: '', email: '', message: '' }}
       validationSchema={validationSchema}
       onSubmit={(values, { setSubmitting }) => {
         fetch("/?no-cache=1", {                                 //eslint-disable-line
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: encode({
-            "form-name": "contact",
+            'form-name': 'contact',
             ...values,
           }),
         })
           .then(() => {
-            navigate("/contact/success");
+            navigate('/contact/success');
             setSubmitting(false);
           })
           .catch((error) => {

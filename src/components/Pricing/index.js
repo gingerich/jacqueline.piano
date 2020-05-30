@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const Pricing = ({ data }) => (
   <div className="columns">
@@ -7,7 +7,7 @@ const Pricing = ({ data }) => (
       <div
         key={price.plan}
         className="column"
-        style={{ border: "1px solid #eaecee" }}
+        style={{ border: '1px solid #eaecee' }}
       >
         <section className="section">
           <h4 className="has-text-centered has-text-weight-semibold">

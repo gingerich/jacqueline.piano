@@ -1,5 +1,5 @@
-import React from "react";
-import config from "../../../config";
+import React from 'react';
+import config from '../../../config';
 
 const Footer = () => {
   return (
@@ -8,8 +8,8 @@ const Footer = () => {
         <div className="content has-text-centered">
           <p>{config.copyright}</p>
           <p>
-            Powered by <a href="https://www.gatsbyjs.org">Gatsby</a> and{" "}
-            <a href="https://www.netlifycms.org">Netlify CMS</a> |{" "}
+            Powered by <a href="https://www.gatsbyjs.org">Gatsby</a> and{' '}
+            <a href="https://www.netlifycms.org">Netlify CMS</a> |{' '}
             <a href="https://github.com/v4iv/gatsby-starter-business">
               Github Repository
             </a>

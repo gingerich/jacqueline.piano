@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { graphql } from "gatsby";
-import ContactPageTemplate from "../components/ContactPageTemplate";
-import Layout from "../components/Layout";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import ContactPageTemplate from '../components/ContactPageTemplate';
+import Layout from '../components/Layout';
 
 const ContactPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;

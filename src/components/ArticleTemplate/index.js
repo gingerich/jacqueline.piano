@@ -1,7 +1,7 @@
-import React from "react";
-import Content from "../Content";
-import { kebabCase } from "lodash";
-import { Link } from "gatsby";
+import React from 'react';
+import Content from '../Content';
+import { kebabCase } from 'lodash';
+import { Link } from 'gatsby';
 
 const ArticleTemplate = ({
   content,

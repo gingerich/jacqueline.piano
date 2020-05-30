@@ -1,7 +1,7 @@
-import React from "react";
-import Helmet from "react-helmet";
-import Pricing from "../Pricing";
-import PropTypes from "prop-types";
+import React from 'react';
+import Helmet from 'react-helmet';
+import Pricing from '../Pricing';
+import PropTypes from 'prop-types';
 
 const PricingPageTemplate = ({
   title,

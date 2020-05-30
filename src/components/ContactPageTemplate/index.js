@@ -1,7 +1,7 @@
-import React from "react";
-import Helmet from "react-helmet";
-import PropTypes from "prop-types";
-import { ContactForm } from "../forms";
+import React from 'react';
+import Helmet from 'react-helmet';
+import PropTypes from 'prop-types';
+import { ContactForm } from '../forms';
 
 const ContactPageTemplate = ({
   title,

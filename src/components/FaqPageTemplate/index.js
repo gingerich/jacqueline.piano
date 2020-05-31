@@ -1,6 +1,6 @@
-import React from './node_modules/react';
+import React from 'react';
 
-export default ([{ title, faq }]) => (
+export default ({ title, faq }) => (
   <>
     <section className="hero is-info is-bold">
       <div className="hero-body">

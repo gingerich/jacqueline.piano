@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import FaqPageTemplate from '../components/FaqPageTemplate';
+import FAQPageTemplate from '../components/FAQPageTemplate';
 import Layout from '../components/Layout';
 
-const FaqPage = ({ data }) => {
+const FAQPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
-      <FaqPageTemplate
+      <FAQPageTemplate
         title={frontmatter.title}
         meta_title={frontmatter.meta_title}
         meta_description={frontmatter.meta_description}
@@ -19,7 +19,7 @@ const FaqPage = ({ data }) => {
   );
 };
 
-FaqPage.propTypes = {
+FAQPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -27,10 +27,10 @@ FaqPage.propTypes = {
   }),
 };
 
-export default FaqPage;
+export default FAQPage;
 
 export const faqPageQuery = graphql`
-  query FaqPage($id: String!) {
+  query FAQPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

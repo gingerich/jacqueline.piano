@@ -7,7 +7,11 @@ const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
   return (
     <div>
-      <section className="hero is-primary is-bold is-fullheight-with-navbar">
+      <section className="hero is-dark is-bold is-fullheight-with-navbar has-background">
+        <img
+          className="hero-background is-transparent"
+          src={'/img/piano-perform.jpg'}
+        />
         <div className="hero-body">
           <div className="container">
             <div className="columns level">

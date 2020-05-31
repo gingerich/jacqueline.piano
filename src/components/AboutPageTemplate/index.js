@@ -12,23 +12,12 @@ const AboutPageTemplate = ({ title, content, contentComponent }) => {
           <div className="container">
             <div className="columns level">
               <div className="column is-offset-1">
-                <div className="content">
+                <div className="content is-medium">
                   <h1 className="title">{title}</h1>
                 </div>
               </div>
               <div className="column">
-                <PageContent content={content} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="section">
-                <PageContent className="content" content={content} />
+                <PageContent className="content is-medium" content={content} />
               </div>
             </div>
           </div>

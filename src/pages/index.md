@@ -1,6 +1,6 @@
 ---
-templateKey: "home-page"
-title: Jacqueline George
+templateKey: 'home-page'
+title: Jacquie George
 subtitle: Piano Teacher
 meta_title: Home | Jacqueline Piano
 meta_description: >-
@@ -14,27 +14,30 @@ description: >-
 offerings:
   blurbs:
     - image: /img/coffee.png
+      icon: fa-book
       text: >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus 
         sem a sem ultrices, eget sagittis magna tempor. Quisque pulvinar lorem 
-        molestie sapien ornare cursus. Praesent eget volutpat est. Proin at 
+        molestie sapien ornare cursus. Proin at 
         sagittis ex. Duis quis dui magna. Nullam urna purus, blandit vitae tincidunt ut, 
-        scelerisque eu sem. Etiam porttitor elit eget mi luctus, vitae blandit enim pretium. 
-        Aenean nec hendrerit leo, a bibendum magna. In hac habitasse platea dictumst. 
-        Suspendisse sapien magna, vestibulum non vehicula id, pellentesque in ante. Nullam 
-        sed auctor tellus. Sed ipsum sem, dapibus nec eros in, feugiat sagittis mi. 
-        Nullam et dui interdum, varius nibh eu, efficitur metus.
+        scelerisque eu sem.
     - image: /img/coffee-gear.png
+      icon: fa-graduation-cap
       text: >
         Fusce semper turpis sed tortor consectetur condimentum. Nulla facilisi. Nam 
         ipsum nulla, dapibus eu mi non, commodo commodo sapien. Pellentesque luctus 
         neque id mauris accumsan, nec imperdiet justo eleifend. Nulla viverra, ipsum 
-        sit amet interdum pharetra, felis lorem sollicitudin felis, vehicula finibus 
-        enim nunc facilisis sapien. Donec nulla nisi, dictum quis nibh et, euismod 
+        sit amet interdum pharetra, felis lorem sollicitudin felis.
+    - image: /img/coffee-gear.png
+      icon: fa-trophy
+      text: >
+        Donec nulla nisi, dictum quis nibh et, euismod 
         semper eros. Praesent nunc tortor, consequat eu justo ac, dictum viverra enim. 
         Etiam sed dui dapibus mauris congue facilisis. Nulla convallis, lectus vel 
-        vehicula interdum, turpis nunc aliquet sem, ac iaculis ligula mauris id tortor. 
-        Sed eget ornare orci, quis dignissim nulla. Pellentesque aliquam consectetur congue.
+        vehicula interdum, turpis nunc aliquet sem, ac iaculis ligula mauris id tortor.
+schedule: >
+  I teach in my home as well as out of student’s homes. I live in the midtown area of KW, just north of Downtown Kitchener. 
+  Here is my availability for the upcoming year September 2018 - June 2019. Check to see when I will be in your area of town if you’d like me to teach out of your home. “In home” are the times I will be teaching in my home.
 testimonials:
   - author: Vaibhav Sharma
     quote: >-

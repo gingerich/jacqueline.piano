@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Offerings = ({ gridItems }) => (
-  <div className="columns is-multiline">
+  <div className="columns is-multiline article">
     {gridItems.map((item) => (
-      <div key={item.image} className="column is-6">
-        <div className="content">
-          <p className="has-text-centered">
+      <div key={item.image} className="column is-4">
+        <div className="content has-text-centered">
+          <p>
             {/* <img alt="" src={item.image} /> */}
-            <span class="icon is-size-1">
-              <i class="fas fa-home"></i>
+            <span className="icon is-large">
+              <i className={`fas fa-3x ${item.icon}`}></i>
             </span>
           </p>
           <p>{item.text}</p>

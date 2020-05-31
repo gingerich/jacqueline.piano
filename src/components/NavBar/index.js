@@ -15,7 +15,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
       <nav className="navbar is-fixed-top" aria-label="main navigation">
         <div className="navbar-brand">
           <Link to="/" className="navbar-item">
-            <strong>Jacqueline Piano</strong>
+            <strong>Jacquie Teaches</strong>
           </Link>
           <button
             className={`button navbar-burger ${isActive ? 'is-active' : ''}`}
@@ -35,8 +35,14 @@ const NavBar = ({ toggleNavbar, isActive }) => (
             <Link className="navbar-item" to="/about">
               About
             </Link>
-            <Link className="navbar-item" to="/pricing">
+            <Link className="navbar-item" to="#schedule">
+              Schedule
+            </Link>
+            <Link className="navbar-item" to="#pricing">
               Pricing
+            </Link>
+            <Link className="navbar-item" to="/faq">
+              FAQ
             </Link>
             <Link className="navbar-item" to="/blog">
               Blog
@@ -48,7 +54,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
               <div className="field is-grouped">
                 <p className="control">
                   <Link className="button is-primary is-outlined" to="/contact">
-                    Contact Us
+                    Contact Me
                   </Link>
                 </p>
               </div>

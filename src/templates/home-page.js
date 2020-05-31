@@ -17,6 +17,7 @@ const HomePage = ({ data }) => {
         heading={frontmatter.heading}
         description={frontmatter.description}
         offerings={frontmatter.offerings}
+        schedule={frontmatter.schedule}
         testimonials={frontmatter.testimonials}
       />
     </Layout>
@@ -46,9 +47,11 @@ export const pageQuery = graphql`
         offerings {
           blurbs {
             image
+            icon
             text
           }
         }
+        schedule
         testimonials {
           author
           quote

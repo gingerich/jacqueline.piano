@@ -15,7 +15,7 @@ export default class HTML extends Component {
           <link rel="shortcut icon" href={favicon} />
           <script
             src="https://kit.fontawesome.com/f0a4d11a51.js"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
           ></script>
         </head>
         <body>

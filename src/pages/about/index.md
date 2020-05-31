@@ -9,9 +9,9 @@ meta_description: >-
   consectetur purus sit amet fermentum.
 ---
 
-## Lorem ipsum dolor sit amet, consectetuer
+<h3 class="subtitle">Hi! I’m Jacquie.</h3>
 
-Hi! I’m Jacquie. A 23-year-old full time music teacher, singer/songwriter, worship leader and Christ-follower. I teach in the Kitchener-Waterloo region where my husband and I have settled down. I primarily teach all levels of piano, but also offer beginner guitar lessons.
+A 25-year-old full time music teacher, singer/songwriter, worship leader and Christ-follower. I teach in the Kitchener-Waterloo region where my husband and I have settled down. I primarily teach all levels of piano, but also offer beginner guitar lessons.
 
 I absolutely love my job! Getting to know students and their families is one of my favourite parts of teaching, as well as learning how to teach each student differently according to their strengths and weaknesses. I love to see my students grow as individuals as well as musicians.
 

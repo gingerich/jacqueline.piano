@@ -9,6 +9,7 @@ import PropTypes from 'prop-types';
 const HomePageTemplate = ({
   title,
   subtitle,
+  background,
   heading,
   description,
   offerings,
@@ -24,10 +25,7 @@ const HomePageTemplate = ({
       <meta name="description" content={meta_description} />
     </Helmet>
     <section className="hero is-dark is-bold is-medium has-background">
-      <img
-        className="hero-background is-transparent"
-        src={'/img/piano-hands.jpg'}
-      />
+      <img className="hero-background is-transparent" src={background} />
       <div className="hero-body">
         <div className="container">
           <div className="columns">

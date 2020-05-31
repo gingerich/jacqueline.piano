@@ -2,6 +2,7 @@
 templateKey: 'home-page'
 title: Jacquie George
 subtitle: Piano Teacher
+background: /img/piano-hands.jpg
 meta_title: Home | Jacqueline Piano
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur

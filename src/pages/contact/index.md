@@ -1,7 +1,7 @@
 ---
 templateKey: 'contact-page'
 title: Contact Me
-subtitle: I'd Love To Help You, Feel Free To Drop A Line
+subtitle: I look forward to hearing from you!
 meta_title: Contact Me | Jacquie Teaches
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur

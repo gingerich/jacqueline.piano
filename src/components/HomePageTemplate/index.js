@@ -18,7 +18,7 @@ const HomePageTemplate = ({
   schedule,
   pricing,
 }) => (
-  <React.Fragment>
+  <>
     <Helmet>
       <title>{meta_title}</title>
       <meta name="description" content={meta_description} />
@@ -53,6 +53,14 @@ const HomePageTemplate = ({
                 <p>{description}</p>
               </div>
               <Offerings gridItems={offerings.blurbs} />
+              <section className="section">
+                <div className="has-text-centered">
+                  <p class="is-size-4">Check out the FAQ page to learn more</p>
+                  <a className="button is-primary" href="/faq">
+                    Learn More
+                  </a>
+                </div>
+              </section>
               <article className="article">
                 <h2
                   id="schedule"
@@ -66,33 +74,50 @@ const HomePageTemplate = ({
                 <h2 id="pricing" className="has-text-weight-semibold is-size-2">
                   Pricing
                 </h2>
-                {/* <div className="content">
-                  <p className="has-text-weight-bold is-size-5">
-                    Half hour lesson: $17
-                  </p>
-                  <p>
-                    Travel fee (when teaching in student’s home): $5
-                    <br />
-                    <small className="is-size-7">
-                      <i>*Travel fee is per trip not per student*</i>
-                    </small>
-                  </p>
-                  <p>Payment accepted by cash, cheque, or e-transfer.</p>
-                </div> */}
-                <HTMLContent className="content" content={pricing.text} />
-                <h4 className="is-4">Cancellation Policy</h4>
-                <p className="content">{pricing.cancellation}</p>
+                <div className="columns level">
+                  <div className="column level-item has-text-centered-tablet">
+                    <HTMLContent className="content" content={pricing.text} />
+                  </div>
+                  <div className="column level-item">
+                    <h4 className="is-4">Cancellation Policy</h4>
+                    <p className="content">{pricing.cancellation}</p>
+                  </div>
+                </div>
               </article>
               <h2 className="has-text-weight-semibold is-size-2">
                 Testimonials
               </h2>
               <Testimonials testimonials={testimonials} />
             </div>
+            <article className="article">
+              <div className="hero is-primary columns">
+                <div className="hero-body has-text-centered column is-6 is-offset-3">
+                  <div className="level">
+                    <div className="level-item">
+                      <p class="is-size-5 is-spaced">
+                        Contact me for more information
+                      </p>
+                    </div>
+                    <div className="level-item">
+                      <a
+                        className="button is-white is-outlined"
+                        href="/contact"
+                      >
+                        <span class="icon">
+                          <i class="fas fa-paper-plane"></i>
+                        </span>
+                        <span>Contact Me</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </div>
     </section>
-  </React.Fragment>
+  </>
 );
 
 HomePageTemplate.propTypes = {

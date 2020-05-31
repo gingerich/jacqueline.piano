@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql, StaticQuery } from 'gatsby';
 import SearchBox from '../SearchBox';
+import config from '../../../config';
 
 const NavBar = ({ toggleNavbar, isActive }) => (
   <StaticQuery
@@ -15,6 +16,13 @@ const NavBar = ({ toggleNavbar, isActive }) => (
       <nav className="navbar is-fixed-top" aria-label="main navigation">
         <div className="navbar-brand">
           <Link to="/" className="navbar-item">
+            <img
+              className="brand-image"
+              src={config.siteLogo}
+              alt={config.siteDescription}
+              width="28"
+              height="28"
+            />
             <strong>Jacquie Teaches</strong>
           </Link>
           <button

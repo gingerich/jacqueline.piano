@@ -7,6 +7,8 @@ import Layout from '../components/Layout';
 const HomePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
+  console.log(frontmatter);
+
   return (
     <Layout>
       <HomePageTemplate
@@ -18,6 +20,7 @@ const HomePage = ({ data }) => {
         description={frontmatter.description}
         offerings={frontmatter.offerings}
         schedule={frontmatter.schedule}
+        pricing={frontmatter.pricing}
         testimonials={frontmatter.testimonials}
       />
     </Layout>
@@ -51,7 +54,14 @@ export const pageQuery = graphql`
             text
           }
         }
-        schedule
+        schedule {
+          title
+          text
+        }
+        pricing {
+          text
+          cancellation
+        }
         testimonials {
           author
           quote

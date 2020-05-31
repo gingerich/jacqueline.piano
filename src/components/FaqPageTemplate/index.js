@@ -2,7 +2,7 @@ import React from 'react';
 
 export default ({ faq }) => (
   <>
-    <section className="hero is-info is-bol">
+    <section className="hero is-info is-bold">
       <div className="hero-body">
         <div className="container">
           <h1 className="title">FAQ</h1>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { HTMLContent } from '../Content';
 import Offerings from '../Offerings';
 import Schedule from '../Schedule';
 import Testimonials from '../Testimonials';
@@ -15,6 +16,7 @@ const HomePageTemplate = ({
   meta_description,
   testimonials,
   schedule,
+  pricing,
 }) => (
   <React.Fragment>
     <Helmet>
@@ -56,15 +58,15 @@ const HomePageTemplate = ({
                   id="schedule"
                   className="has-text-weight-semibold is-size-2"
                 >
-                  Schedule
+                  {schedule.title}
                 </h2>
-                <Schedule description={schedule} />
+                <Schedule description={schedule.text} />
               </article>
               <article className="article">
                 <h2 id="pricing" className="has-text-weight-semibold is-size-2">
                   Pricing
                 </h2>
-                <div className="content">
+                {/* <div className="content">
                   <p className="has-text-weight-bold is-size-5">
                     Half hour lesson: $17
                   </p>
@@ -76,18 +78,10 @@ const HomePageTemplate = ({
                     </small>
                   </p>
                   <p>Payment accepted by cash, cheque, or e-transfer.</p>
-                </div>
+                </div> */}
+                <HTMLContent className="content" content={pricing.text} />
                 <h4 className="is-4">Cancellation Policy</h4>
-                <p className="content">
-                  Every three months, students are allowed one lesson
-                  cancellation. Beyond this, the full amount of the lesson will
-                  be charged. If you would like to reschedule your lesson,
-                  please contact me in advance -- preferably the week before, or
-                  minimum two days in advance. Vacation time is excluded from
-                  this policy, as long as notice of vacation is received minimum
-                  two weeks in advance. Lessons on holiday Mondays or Fridays
-                  are also excluded from this and negotiable for each situation.
-                </p>
+                <p className="content">{pricing.cancellation}</p>
               </article>
               <h2 className="has-text-weight-semibold is-size-2">
                 Testimonials

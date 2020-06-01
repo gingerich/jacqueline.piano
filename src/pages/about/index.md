@@ -2,7 +2,7 @@
 templateKey: about-page
 title: About Me
 background: /img/piano-perform.jpg
-meta_title: About Me | Jacqueline Piano
+meta_title: About Me | Jacquie Teaches
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
   ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam

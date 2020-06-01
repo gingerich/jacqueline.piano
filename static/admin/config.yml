@@ -61,7 +61,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "faq-page"}
           - {label: Title, name: title, widget: string}
-          - {label: FAQ, name: faq, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Text, name: auttexthor, widget: string}]}
+          - {label: FAQ, name: faq, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Text, name: text, widget: string}]}
           - {label: "Meta Title", name: "meta_title", widget: "string"}
           - {label: "Meta Description", name: "meta_description", widget: "text"}
   - name: "blog"

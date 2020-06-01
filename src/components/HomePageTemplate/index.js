@@ -23,6 +23,10 @@ const HomePageTemplate = ({
     <Helmet>
       <title>{meta_title}</title>
       <meta name="description" content={meta_description} />
+      <meta
+        property="og:image"
+        content={`${window.location.origin}${background}`}
+      ></meta>
     </Helmet>
     <section className="hero is-dark is-bold is-medium has-background">
       <img className="hero-background is-transparent" src={background} />

@@ -14,6 +14,10 @@ const AboutPage = ({ data }) => {
       <Helmet>
         <title>{post.frontmatter.meta_title}</title>
         <meta name="description" content={post.frontmatter.meta_description} />
+        <meta
+          property="og:image"
+          content={`${window.location.origin}${post.frontmatter.background}`}
+        ></meta>
       </Helmet>
       <AboutPageTemplate
         contentComponent={HTMLContent}

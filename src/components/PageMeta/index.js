@@ -13,7 +13,7 @@ export default ({ title, description, image, location }) => (
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={`http://${location.host}${image}`} />
-    <meta property="og:image:secure" content={`${location.origin}${image}`} />
+    <meta property="og:image:secure_url" content={`${location.origin}${image}`} />
 
     {/* <!-- Twitter --> */}
     <meta property="twitter:card" content="summary_large_image" />

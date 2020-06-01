@@ -6,7 +6,7 @@ import { HTMLContent } from '../components/Content';
 import AboutPageTemplate from '../components/AboutPageTemplate';
 import Layout from '../components/Layout';
 
-const AboutPage = ({ data }) => {
+const AboutPage = ({ data, location }) => {
   const { markdownRemark: post } = data;
 
   return (
@@ -16,7 +16,7 @@ const AboutPage = ({ data }) => {
         <meta name="description" content={post.frontmatter.meta_description} />
         <meta
           property="og:image"
-          content={`${window.location.origin}${post.frontmatter.background}`}
+          content={`${location.origin}${post.frontmatter.background}`}
         ></meta>
       </Helmet>
       <AboutPageTemplate

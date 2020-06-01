@@ -1,5 +1,4 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import { HTMLContent } from '../Content';
 import Offerings from '../Offerings';
 import Schedule from '../Schedule';
@@ -13,21 +12,11 @@ const HomePageTemplate = ({
   heading,
   description,
   offerings,
-  meta_title,
-  meta_description,
   testimonials,
   schedule,
   pricing,
 }) => (
   <>
-    <Helmet>
-      <title>{meta_title}</title>
-      <meta name="description" content={meta_description} />
-      <meta
-        property="og:image"
-        content={`${window.location.origin}${background}`}
-      ></meta>
-    </Helmet>
     <section className="hero is-dark is-bold is-medium has-background">
       <img className="hero-background is-transparent" src={background} />
       <div className="hero-body">
@@ -57,7 +46,9 @@ const HomePageTemplate = ({
               <Offerings gridItems={offerings.blurbs} />
               <section className="section">
                 <div className="has-text-centered">
-                  <p class="is-size-4">Check out the FAQ page to learn more</p>
+                  <p className="is-size-4">
+                    Check out the FAQ page to learn more
+                  </p>
                   <a className="button is-primary" href="/faq">
                     Learn More
                   </a>
@@ -96,7 +87,7 @@ const HomePageTemplate = ({
                 <div className="hero-body has-text-centered column is-6 is-offset-3">
                   <div className="level">
                     <div className="level-item">
-                      <p class="is-size-5 is-spaced">
+                      <p className="is-size-5 is-spaced">
                         Contact me for more information
                       </p>
                     </div>
@@ -105,8 +96,8 @@ const HomePageTemplate = ({
                         className="button is-white is-outlined"
                         href="/contact"
                       >
-                        <span class="icon">
-                          <i class="fas fa-paper-plane"></i>
+                        <span className="icon">
+                          <i className="fas fa-paper-plane"></i>
                         </span>
                         <span>Contact Me</span>
                       </a>

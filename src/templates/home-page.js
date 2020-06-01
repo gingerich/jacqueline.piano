@@ -1,16 +1,23 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import HomePageTemplate from '../components/HomePageTemplate';
 import Layout from '../components/Layout';
 
-const HomePage = ({ data }) => {
+const HomePage = ({ data, location }) => {
   const { frontmatter } = data.markdownRemark;
-
-  console.log(frontmatter);
 
   return (
     <Layout>
+      <Helmet>
+        <title>{frontmatter.meta_title}</title>
+        <meta name="description" content={frontmatter.meta_description} />
+        <meta
+          property="og:image"
+          content={`${location.origin}${frontmatter.background}`}
+        ></meta>
+      </Helmet>
       <HomePageTemplate
         title={frontmatter.title}
         subtitle={frontmatter.subtitle}

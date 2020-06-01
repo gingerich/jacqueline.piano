@@ -12,13 +12,17 @@ export default ({ title, description, image, location }) => (
     <meta property="og:url" content={location.href} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={`${location.origin}${image}`} />
+    <meta property="og:image" content={`http://${location.host}${image}`} />
+    <meta property="og:image:secure" content={`${location.origin}${image}`} />
 
     {/* <!-- Twitter --> */}
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content={location.href} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={`${location.origin}${image}`} />
+    <meta
+      property="twitter:image"
+      content={`http://${location.host}${image}`}
+    />
   </Helmet>
 );

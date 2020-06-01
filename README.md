@@ -1,4 +1,6 @@
-# gatsby-starter-business
+# jacqueline.piano
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0f6e2ba8-4e74-4f13-8698-63ca284fe71b/deploy-status)](https://app.netlify.com/sites/jacquieteaches/deploys)
+
 A [Gatsby v2](https://www.gatsbyjs.org/) and [Netlify CMS](https://www.netlifycms.org) powered generic business website.
 
 It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.

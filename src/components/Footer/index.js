@@ -11,7 +11,7 @@ const Footer = () => {
             <small>
               Powered by <a href="https://www.gatsbyjs.org">Gatsby</a> and{' '}
               <a href="https://www.netlifycms.org">Netlify CMS</a> |{' '}
-              <a href="https://github.com/v4iv/gatsby-starter-business">
+              <a href="https://github.com/gingerich/jacqueline.piano">
                 Github Repository
               </a>
             </small>

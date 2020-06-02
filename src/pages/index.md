@@ -5,7 +5,7 @@ subtitle: Piano Teacher
 background: /img/piano-hands.jpg
 heading: Welcome!
 description: >-
-  Hi! I’m Jacquie. A 23-year-old full time music teacher, singer/songwriter,
+  Hi! I’m Jacquie. A 25-year-old full time music teacher, singer/songwriter,
   worship leader and Christ-follower. I teach in the Kitchener-Waterloo region
   where my husband and I have settled down. I primarily teach all levels of
   piano, but also offer beginner guitar lessons.

@@ -1,98 +1,96 @@
-# jacqueline.piano
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0f6e2ba8-4e74-4f13-8698-63ca284fe71b/deploy-status)](https://app.netlify.com/sites/jacquieteaches/deploys)
+# Stone: Astro Theme
 
-A [Gatsby v2](https://www.gatsbyjs.org/) and [Netlify CMS](https://www.netlifycms.org) powered generic business website.
+Stone is a free and open-source Astro theme specially designed for Business, Marketing, SaaS and Startup websites.
 
-It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
+## Key Features:
 
-## Demo
-[Gatsby Starter Business](https://gatsby-starter-business.netlify.com)
-
-## Features
-* Complete Business Website Suite - Home Page, About Page, Pricing Page, Contact Page and Blog
-* Netlify CMS for Content Management
-* SEO Friendly (Sitemap, Schemas, Meta Tags, GTM etc)
-* Bulma and Sass Support for styling
-* Progressive Web App & Offline Support
-* Tags and RSS Feed for Blog
-* Disqus and Share Support
-* Elastic-Lunr Search (NEW)
-* Pagination (NEW)
-* Contact Form (Netlify Forms)
-* Easy Configuration using `config.js` file
-
-## Prerequisite
-* Node
-* Gatsby CLI (globally installed)
+- **Built with Tailwind CSS & Alpine.js**
+- **5+ Pages**
+- **15+ Sections**
+- Clean & Modern Design
+- Fully Responsive
+- Dark & Light Mode
+- Fast & Performant
+- Super Lightweight
+- View Transitions (experimental)
+- **Prettier** Code Formatter
+- **Google Fonts**
+- **Remix Icons**
+- Free Updates
 
 ## Getting Started
-Create your own project with Gatsby CLI:
-```shell
-gatsby new yourbusinessname https://github.com/v4iv/gatsby-starter-business.git 
+
+### Requirements
+
+- Basic knowledge of Astro, HTML and CSS.
+- Text editor (We recommend Visual Studio Code)
+- Node.js 18 or higher.
+
+### Install dependencies
+
+Navigate to your project folder and install its dependencies:
+
+```
+npm install
 ```
 
-## Available Scripts
+### Start
 
-### Develop
-Start a hot-reloading development environment accessible at `localhost:8000`
-```shell
-yarn start
+Once the installation is done, you can now run your app:
+
 ```
+npm run dev
+```
+
+This runs the app in development mode. Open http://localhost:3000 to view it in the browser.
 
 ### Build
-Get an optimized production build for your site generating static HTML and per-route JavaScript code bundles.
-```shell
-yarn build
-```
-
-### Serve
-gatsby serve — Gatsby starts a local HTML server for testing your built site.
-```shell
-yarn serve
-```
-
-### Lint
-Lint the code according to eslintrc file, for consistency.
-```shell
-yarn lint
-```
-
-### Clean
-Remove the .cache and public for a scratch compile.
-```shell
-yarn clean
-```
-
-## Configuration
-To personalize and configure this Starter open `config.js` file and replace the default values.
-
-```javascript
-module.exports = {
-  siteTitle: 'Gatsby Starter Business', // Site title.
-  siteTitleAlt: 'Business', // Alternative site title for SEO.
-  siteLogo: '/icons/icon-512x512.png', // Logo used for SEO and manifest.
-  siteUrl: 'https://gatsby-starter-business.netlify.com', // Domain of your website without pathPrefix.
-  // Do not use trailing slash!
-  pathPrefix: '/', // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-business/.
-  siteDescription: 'Leverage Gatsby Business Starter for your Business.', // Website description used for RSS feeds/meta description tag.
-  siteRss: '/rss.xml',
-  siteFBAppID: '', // FB Application ID for using app insights
-  googleTagManagerID: '', // GTM tracking ID.
-  disqusShortname: 'gatsby-business-starter', // Disqus shortname.
-  userName: 'Vaibhav Sharma',
-  userTwitter: 'vaibhaved',
-  userLocation: 'Delhi NCR, India',
-  userDescription: '',
-  copyright: 'Copyright © Gatsby Starter Business 2018. All Rights Reserved.', // Copyright string for the footer of the website and RSS feed.
-  themeColor: '#00d1b2', // Used for setting manifest and progress theme colors.
-  backgroundColor: '#ffffff', // Used for setting manifest background color.
-}
 
 ```
+npm run build
+```
+
+This builds the app for production to the `./dist/` folder.
+
+## Project Structure
+
+Inside the project, you'll see the following folders and files:
+
+```
+/
+├── public/
+├── src/
+│   ├── components/
+│   ├── layouts/
+│   └── pages/
+├── .prettierrc
+├── astro.config.mjs
+├── package-lock.json
+├── package.json
+├── README.md
+├── tailwind.config.cjs
+└── tsconfig.json
+```
+
+- `public/*` - Any static assets (images, fonts, icons, ...)
+- `src/*` - Project source code (components, pages, ...)
+- `src/components/*` - Reusable Astro components used to build pages.
+- `src/layouts/*` - Astro components that define the UI structure shared by one or more pages..
+- `src/pages/*` - Astro components used to create new pages on your site. Each page is exposed as a route based on its file name.
+- `.prettierrc` - Prettier configuration file.
+- `astro.config.mjs` - Astro configuration file.
+- `package.json` - File used by JavaScript package managers to manage your dependencies. It also defines the scripts that are commonly used to run Astro.
+- `tailwind.config.cjs` - Tailwind configuration file. The theme section is where you define your color palette and fonts.
+- `tsconfig.json` - TypeScript configuration file.
 
 ## Deployment
-Clicking the button will ask for authentication via Github, which will create a repo in your github account with this starter. Then, it will build and deploy the site to Netlify.
 
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/v4iv/gatsby-starter-business&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
+Ready to build and deploy your site? Follow the [official documentation](https://docs.astro.build/en/guides/deploy/).
 
-You can read up on how to set up Identity(Authentication for CMS User) here [How To Set Up Netlify CMS](https://www.netlifycms.org/docs/add-to-your-site/)
+## Support
+
+If you have any questions or suggestions do not hesitate to contact me.
+
+## License
+
+This project is licensed under the terms of the MIT license.

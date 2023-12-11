@@ -28,4 +28,7 @@ module.exports = {
       '6xl': ['3.75rem', '4.25rem'],
     },
   },
+  plugins: [
+    require("@tailwindcss/typography")
+  ]
 };

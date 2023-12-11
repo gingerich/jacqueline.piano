@@ -6,5 +6,5 @@ import config from './decap-cms'
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), compress(), decap({ config })],
+  integrations: [tailwind(), compress(), decap({ config, previewStyles: ['@astrojs/tailwind/base.css'] })],
 });

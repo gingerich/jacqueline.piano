@@ -11,9 +11,19 @@ export default {
       label: "Pages",
       files: [
         {
-          label: "About Me Page",
+          label: "About Me",
           name: "about",
           file: "src/pages/about.md",
+          fields: [
+            { label: "Title", name: "title", widget: "string" },
+            { label: "Description", name: "description", widget: "string" },
+            { label: "Page Body", name: "body", widget: "markdown" },
+          ]
+        },
+        {
+          label: "Contact",
+          name: "contact",
+          file: "src/pages/contact.md",
           fields: [
             { label: "Title", name: "title", widget: "string" },
             { label: "Description", name: "description", widget: "string" },

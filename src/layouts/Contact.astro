@@ -1,0 +1,30 @@
+---
+import Layout from './Layout.astro';
+import ContactForm from '../components/contact/ContactForm.astro';
+
+interface Data {
+  title: string;
+  description: string;
+}
+
+interface Props {
+  frontmatter: Data;
+}
+
+const { title, description } = Astro.props.frontmatter;
+
+const pageTitle = `${title} · Jacquie Teaches`;
+---
+
+<Layout title={pageTitle} {description}>
+  <section class="py-16 sm:py-20">
+    <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div class="grid gap-12 lg:grid-cols-2 lg:gap-8">
+        <div class="prose lg:prose-xl sm:prose-xl dark:prose-invert flex flex-col gap-4 sm:gap-6 lg:max-w-lg">
+            <slot />
+        </div>
+        <ContactForm />
+      </div>
+    </div>
+  </section>
+</Layout>
